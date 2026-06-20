@@ -17,16 +17,20 @@ body {
     gap: 20px;
 }
 
-h1, h2 {
+h1 {
     color: #b03a3a;
     margin: 10px;
-}
-
-h1 {
     font-size: 3rem;
 }
 
 .buttons {
+    display: flex;
+    gap: 15px; /* Memberi jarak antara tombol IYA dan TIDAK */
+    z-index: 10;
+}
+
+/* Gaya ini dipindahkan langsung ke tag 'button' agar tombolnya terbentuk */
+button {
     padding: 10px 20px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -47,7 +51,7 @@ h1 {
 }
 
 .gif {
-    width: 20px;
+    width: 250px;
     margin-top: 20px;
     z-index: 1;
 }
